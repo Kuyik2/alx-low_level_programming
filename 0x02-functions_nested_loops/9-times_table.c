@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *times_table -> time table
 */
@@ -17,7 +16,7 @@ void times_table(void)
 			if (y != 0 && k < 10)
 			{
 				_putchar(',');
-				_putchar(' ');
+	        		_putchar(' ');
 				_putchar(' ');
 			} else if (k >= 10)
 			{
