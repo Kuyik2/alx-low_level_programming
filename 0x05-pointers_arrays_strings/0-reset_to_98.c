@@ -1,17 +1,11 @@
-#include <stdio.h>
+#include "main.h" 
+/** 
+*reset_to_98 - use a pointer to change integer value 
+*@n: parameter 
+*Description - reset_to_98 resets the value of *n to 98 
+*/ 
 
-/**
-*main - check the code 
-*
-*Return: Always 0.
-*/
-int main(void)
-{
-int 98;
-
-n = 402;
-printf("n=%d\n", n);
-reset_to_98(&n);
-printf("n=%d\n", n);
-return (0);
+void reset_to_98(int *n) 
+{ 
+*n = 98; 
 }
