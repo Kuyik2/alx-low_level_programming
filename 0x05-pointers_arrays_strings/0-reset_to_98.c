@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int n;
+int 98;
 
 n = 402;
 printf("n=%d\n", n);
