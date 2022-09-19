@@ -1,11 +1,11 @@
-#include "main_h"
+#include "main.h"
 
 /**
-*main - check the code
-*
-*Return: Always 0.
+*swap-function that swap two integers
+*@n: parameter
+*Description-swap two integers of *a and *b to 98 and 42
 */
-int main(void)
+void swap_int(int *a, int *b);
 {
 int a;
 int b;
