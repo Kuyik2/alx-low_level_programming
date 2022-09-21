@@ -1,16 +1,24 @@
 #include "main.h"
-#include <string.h>
 /**
-*_strcmp -> for comparing purpose
-*@s1: param1
-*@s2: param2
-*Return: integer
+*_strcmp - compares two strings
+*@s1: A pointer to a character that will be changed
+*@s2: A pointer to a character that will also be changed/modified/updated
+*Return: dest
 */
-int _strcmp(char *s1, char *s2)
-{
-int result;
 
-result = strcmp(s1, s2);
-return (result);
+int _strcmp(char *s1, char *s2)
+
+{
+
+char *str_one = s1;
+char *str_two = s2;
+
+
+while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
+{
+str_one++;
+str_two++;
 }
-Footer
+
+return (*str_one - *str_two);
+}
